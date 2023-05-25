@@ -12,7 +12,7 @@ public class Banco {
 	public void cadastarCliente() {
 		System.out.println("\n---Cadastro---");
 		System.out.print("Informe o nome do cliente: ");
-		String nome = ler.nextLine();
+		String nome = ler.next();
 		Conta c = new Conta(nome);
 		contas.add(c);
 		
@@ -24,6 +24,14 @@ public class Banco {
 			System.out.println("Cod: " + c.getNumero() + " -> Nome: " + c.getCliente());	
 		}
 
+	}
+
+	public void CaixaBanco(){
+		float saldo = 0;
+		for(Conta c : contas) {
+			saldo += c.getSaldo();
+		}
+		System.out.println("Saldo do banco: " + saldo);
 	}
 	
 	public void EscolherCliente() {

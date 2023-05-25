@@ -12,7 +12,8 @@ public class Index {
 		
 		
 		do {
-			System.out.println("---Smolak's Banking---");
+			System.out.println("\n-----Smolak's Banking-----");
+			b.CaixaBanco();
 			System.out.println("\nOperações: ");
 			System.out.println("1 - Cadastrar Conta");
 			System.out.println("2 - Listar contas existentes");
@@ -21,6 +22,7 @@ public class Index {
 			
 			System.out.print("Informe a operação desejada: ");
 			opcao = ler.nextInt();
+			
 			
 			switch(opcao) {
 			
